@@ -1,0 +1,19 @@
+name: AdminGUI
+main: top.nstu.adminGUI.AdminGUI
+version: 2.0
+api-version: "1.19"
+commands:
+  admingui:
+    description: 打开管理员面板
+    usage: /admingui
+permissions:
+  admin.gui:
+    description: 管理员权限
+    default: op
+    children:
+      admin.gui.trail: true
+      admin.gui.invisible: true
+      admin.gui.ban: true
+      admin.gui.time: true
+      admin.gui.weather: true
+      admin.gui.mute: true
